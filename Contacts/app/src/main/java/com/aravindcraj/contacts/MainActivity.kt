@@ -48,7 +48,10 @@ fun Contacts(details: List<Contact>) {
 @Composable
 fun Contact(detail: Contact) {
     Container(modifier = Spacing(16.dp)) {
-        Column(mainAxisSize = LayoutSize.Expand, crossAxisSize = LayoutSize.Expand) {
+        Column(
+                mainAxisSize = LayoutSize.Expand,
+                crossAxisSize = LayoutSize.Expand
+        ) {
             Text(text = detail.name,
                     style = +themeTextStyle { h6 })
             Text(text = detail.contactNumber,
